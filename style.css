@@ -1,24 +1,55 @@
 html, body {
 	height: 100%;
+	margin: 0px;
+	padding: 0px;
+}
+
+.topHead {
+	width: 960px;
+	margin: 0 auto;
+	/*To keep centered we set the right and left to AUTO. This is a block Element*/
+	background: #ffffff;
+	/*order of border designation DOES matter*/
+	border: 2px solid red;
+	border-top: none;
+	border-bottom: none;
+}
+.botHead {
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
 }
 
 /*all h1 in the header will have style below*/
 header h1 {
-	background-color: teal;
-	font-size: 20px;
+	font-family: 'Georgia';
+	font-size: 30px;
+	background-color: #4aaaa5;
 	color: white;
-	padding: 12px 24px;
+	padding: 30px 27px;
 	display: inline-block;
+	margin: 0;
+
 }
 
-header nav {
-	display: inline-block;
+main h1 {
+	color: #4aaaa5;
+	font-size: 20px;
+	border-bottom-style: solid;
+	border-bottom-color: #cccccc;
+	margin:20px;
+	padding-top: 30px;
 }
+
+header nav, p, a{
+	display: inline;
+	color: #777777;
+}
+
 
 .contentWrap {
 	min-height: 100%;
 	width: 960px;
-	margin: 0 auto;
+	margin: 0px auto;
 	/*To keep centered we set the right and left to AUTO. This is a block Element*/
 	background: lightgray;
 	/*order of border designation DOES matter*/
@@ -28,7 +59,13 @@ header nav {
 }
 
 main {
+	margin-top: 20px;
+	width: 650px;
 	padding-bottom: 90px;
+	background-color: #ffffff;
+	border-color: #dddddd;
+	line-height: 40px;
+	color: #777777;;
 }
 
 
@@ -37,8 +74,20 @@ footer {
 	color: white;
 	position: fixed;
 	display: inline-block;
-	background:black;
+	background:#666666;
 	padding: 20px;
 	text-align: center;
 	width:100%;
+	border-top-color: #4aaaa5;
+	border-top-style: solid;
+	border-top-width: 7.6px;
+}
+
+main img {
+	height: 200px;
+	width: auto;
+	float: left;
+	display: inline;
+	margin-right: 40px;
+	padding-bottom: 5px;
 }
