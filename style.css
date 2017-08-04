@@ -2,6 +2,8 @@ html, body {
 	height: 100%;
 	margin: 0px;
 	padding: 0px;
+	background-image: url("./assets/images/circles-and-roundabouts.png.png");
+	background: repeat-x repeat-y;
 }
 
 .topHead {
@@ -10,13 +12,14 @@ html, body {
 	/*To keep centered we set the right and left to AUTO. This is a block Element*/
 	background: #ffffff;
 	/*order of border designation DOES matter*/
-	border: 2px solid red;
 	border-top: none;
 	border-bottom: none;
 }
+
 .botHead {
 	border-bottom-style: solid;
 	border-bottom-color: #cccccc;
+	background: #ffffff;
 }
 
 /*all h1 in the header will have style below*/
@@ -25,19 +28,20 @@ header h1 {
 	font-size: 30px;
 	background-color: #4aaaa5;
 	color: white;
-	padding: 30px 27px;
+	padding: 27px;
 	display: inline-block;
-	margin: 0;
+	margin: 0px;
 
 }
 
 main h1 {
 	color: #4aaaa5;
-	font-size: 20px;
+	font-size: 30px;
 	border-bottom-style: solid;
 	border-bottom-color: #cccccc;
-	margin:20px;
-	padding-top: 30px;
+	padding-bottom: 25;
+	margin: 40 0 40 0;
+	font-family: "Georgia";
 }
 
 header nav, p, a{
@@ -45,36 +49,36 @@ header nav, p, a{
 	color: #777777;
 }
 
+footer p {
+	color: lightgray;
+}
 
 .contentWrap {
-	min-height: 100%;
-	width: 960px;
-	margin: 0px auto;
+	width: 650px;
+	height: 550px;
+	margin: 40 auto 0 auto;
 	/*To keep centered we set the right and left to AUTO. This is a block Element*/
-	background: lightgray;
+	background: #ffffff;
 	/*order of border designation DOES matter*/
-	border: 2px solid red;
-	border-top: none;
-	border-bottom: none;
+	border: 2px solid #cccccc;
 }
 
 main {
-	margin-top: 20px;
-	width: 650px;
-	padding-bottom: 90px;
+	width: 550px;
+	height: 500px;
+	padding: 0 50 0 50;
 	background-color: #ffffff;
 	border-color: #dddddd;
 	line-height: 40px;
-	color: #777777;;
+	color: #777777;
 }
 
 
-footer {
+footer{
 	bottom: 0;
-	color: white;
 	position: fixed;
 	display: inline-block;
-	background:#666666;
+	background-color:#666666;
 	padding: 20px;
 	text-align: center;
 	width:100%;
@@ -90,4 +94,37 @@ main img {
 	display: inline;
 	margin-right: 40px;
 	padding-bottom: 5px;
+}
+
+.floatRight {
+	float:right;
+}
+
+#navLinks {
+	font-family: "Helvetica", sans-serif;
+	font-size: 20px;
+	margin: 40px 0px 40px 40px;
+}
+
+.sideBar {
+	width: 270;
+	height: 270;
+	display: inline-block;
+	position:relative;
+	border-style: solid; 
+	border-color: red;
+	border-width: 2px;
+}
+
+
+
+.bothSection {
+	width: 960px;
+	padding: 0;
+	margin: 0 auto;
+}
+
+.bothSections .sideBar{
+	float:right;
+	overflow: 0;
 }
