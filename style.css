@@ -23,6 +23,8 @@ body {
     background: #ffffff;
 }
 
+
+
 /*all h1 in the header will have style below*/
 
 header h1 {
@@ -59,11 +61,13 @@ footer p {
 .contentWrap {
     width: 650px;
     height: 550px;
-    margin: 40 auto 0 auto;
+    margin: 40px auto 0 auto;
     /*To keep centered we set the right and left to AUTO. This is a block Element*/
     background: #ffffff;
     /*order of border designation DOES matter*/
     border: 2px solid #cccccc;
+    display: inline-block;
+    float: left;
 }
 
 main {
@@ -78,7 +82,10 @@ main {
 
 
 footer {
+    right: 0;
     bottom: 0;
+    left: 0;
+
     position: fixed;
     display: inline-block;
     background-color: #666666;
@@ -110,26 +117,30 @@ main img {
 }
 
 .sideBar {
-    width: 270;
-    height: 270;
+    width: 268;
+    height: 268;
     display: inline-block;
     position: relative;
     border-style: solid;
     border-color: #cccccc;
     border-width: 2px;
+    margin: 30px auto 0px auto;
+    background-color: #fff;
 }
+ .sideBar p {
+    color: #4aaaa5;
+ }
 
 
-
-.bothSection {
+.bothSections {
     width: 960px;
-    padding: 0;
-    margin: 0 auto;
+    margin: 0px auto;
+    display: block;
 }
 
 .bothSections .sideBar {
     float: right;
-    overflow: 0;
+
 }
 
 .inlineNav img {
@@ -143,8 +154,9 @@ main img {
     margin: 0 auto;
     display: inline-block;
     width: 270px;
+    float: right;
 }
 
 .sideBar p {
-    display: block;
+    display: inline-block;
 }
