@@ -1,130 +1,150 @@
-html, body {
-	height: 100%;
-	margin: 0px;
-	padding: 0px;
-	background-image: url("./assets/images/circles-and-roundabouts.png.png");
-	background: repeat-x repeat-y;
+html,
+body {
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    background-image: url("./assets/images/circles-and-roundabouts.png.png");
+    background: repeat-x repeat-y;
 }
 
 .topHead {
-	width: 960px;
-	margin: 0 auto;
-	/*To keep centered we set the right and left to AUTO. This is a block Element*/
-	background: #ffffff;
-	/*order of border designation DOES matter*/
-	border-top: none;
-	border-bottom: none;
+    width: 960px;
+    margin: 0 auto;
+    /*To keep centered we set the right and left to AUTO. This is a block Element*/
+    background: #ffffff;
+    /*order of border designation DOES matter*/
+    border-top: none;
+    border-bottom: none;
 }
 
 .botHead {
-	border-bottom-style: solid;
-	border-bottom-color: #cccccc;
-	background: #ffffff;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    background: #ffffff;
 }
 
 /*all h1 in the header will have style below*/
-header h1 {
-	font-family: 'Georgia';
-	font-size: 30px;
-	background-color: #4aaaa5;
-	color: white;
-	padding: 27px;
-	display: inline-block;
-	margin: 0px;
 
+header h1 {
+    font-family: 'Georgia';
+    font-size: 30px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 27px;
+    display: inline-block;
+    margin: 0px;
 }
 
 main h1 {
-	color: #4aaaa5;
-	font-size: 30px;
-	border-bottom-style: solid;
-	border-bottom-color: #cccccc;
-	padding-bottom: 25;
-	margin: 40 0 40 0;
-	font-family: "Georgia";
+    color: #4aaaa5;
+    font-size: 30px;
+    border-bottom-style: solid;
+    border-bottom-color: #cccccc;
+    padding-bottom: 25;
+    margin: 40 0 40 0;
+    font-family: "Georgia";
 }
 
-header nav, p, a{
-	display: inline;
-	color: #777777;
+header nav,
+p,
+a {
+    display: inline;
+    color: #777777;
 }
 
 footer p {
-	color: lightgray;
+    color: lightgray;
 }
 
 .contentWrap {
-	width: 650px;
-	height: 550px;
-	margin: 40 auto 0 auto;
-	/*To keep centered we set the right and left to AUTO. This is a block Element*/
-	background: #ffffff;
-	/*order of border designation DOES matter*/
-	border: 2px solid #cccccc;
+    width: 650px;
+    height: 550px;
+    margin: 40 auto 0 auto;
+    /*To keep centered we set the right and left to AUTO. This is a block Element*/
+    background: #ffffff;
+    /*order of border designation DOES matter*/
+    border: 2px solid #cccccc;
 }
 
 main {
-	width: 550px;
-	height: 500px;
-	padding: 0 50 0 50;
-	background-color: #ffffff;
-	border-color: #dddddd;
-	line-height: 40px;
-	color: #777777;
+    width: 550px;
+    height: 500px;
+    padding: 0 50 0 50;
+    background-color: #ffffff;
+    border-color: #dddddd;
+    line-height: 40px;
+    color: #777777;
 }
 
 
-footer{
-	bottom: 0;
-	position: fixed;
-	display: inline-block;
-	background-color:#666666;
-	padding: 20px;
-	text-align: center;
-	width:100%;
-	border-top-color: #4aaaa5;
-	border-top-style: solid;
-	border-top-width: 7.6px;
+footer {
+    bottom: 0;
+    position: fixed;
+    display: inline-block;
+    background-color: #666666;
+    padding: 20px;
+    text-align: center;
+    width: 100%;
+    border-top-color: #4aaaa5;
+    border-top-style: solid;
+    border-top-width: 7.6px;
 }
 
 main img {
-	height: 200px;
-	width: auto;
-	float: left;
-	display: inline;
-	margin-right: 40px;
-	padding-bottom: 5px;
+    height: 200px;
+    width: auto;
+    float: left;
+    display: inline;
+    margin-right: 40px;
+    padding-bottom: 5px;
 }
 
 .floatRight {
-	float:right;
+    float: right;
 }
 
 #navLinks {
-	font-family: "Helvetica", sans-serif;
-	font-size: 20px;
-	margin: 40px 0px 40px 40px;
+    font-family: "Helvetica", sans-serif;
+    font-size: 20px;
+    margin: 40px 0px 40px 40px;
 }
 
 .sideBar {
-	width: 270;
-	height: 270;
-	display: inline-block;
-	position:relative;
-	border-style: solid; 
-	border-color: red;
-	border-width: 2px;
+    width: 270;
+    height: 270;
+    display: inline-block;
+    position: relative;
+    border-style: solid;
+    border-color: #cccccc;
+    border-width: 2px;
 }
 
 
 
 .bothSection {
-	width: 960px;
-	padding: 0;
-	margin: 0 auto;
+    width: 960px;
+    padding: 0;
+    margin: 0 auto;
 }
 
-.bothSections .sideBar{
-	float:right;
-	overflow: 0;
+.bothSections .sideBar {
+    float: right;
+    overflow: 0;
+}
+
+.inlineNav img {
+    width: 70;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
+
+.inlineNav {
+    margin: 0 auto;
+    display: inline-block;
+    width: 270px;
+}
+
+.sideBar p {
+    display: block;
 }
